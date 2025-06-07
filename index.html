@@ -1,45 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="utf-8">
-    <title>York Best Living </title>
-    <!-- Leaflet CSS -->
+    <title>York - accessibility analysis</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-    <!-- Leaflet Heatmap Plugin -->
-    <script src="https://unpkg.com/leaflet.heat@0.2.0/dist/leaflet-heat.js"></script>
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-        }
-        #map {
-            width: 100%;
-            height: 100vh;  
-        }
-        .map-header {
-            position: absolute;
-            top: 10px;
-            left: 50px;
-            z-index: 1000;
-            background: white;
-            padding: 10px 15px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.2);
-        }
-        .leaflet-control-attribution {
-            font-size: 9px;
-        }
+        #map { height: 600px; }
+        #results { padding: 10px; background: #f8f9fa; }
     </style>
 </head>
 <body>
-    <div class="map-header">
-        <h2>York Analysis</h2>
-    </div>
     <div id="map"></div>
-    <p>Map Analysis</p>
-
+    <div id="results"></div>
+    
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-    <script src="JS/basemap.js"></script>
+    <script src="https://unpkg.com/turf@6.5.0/turf.min.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
